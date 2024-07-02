@@ -35,15 +35,13 @@
         </div>
     </div>
 
-    <div class="click_capture"></div>
-
     <div class="body_wrapper">
 
         <!-- Header -->
         <nav class="navbar navbar-expand-lg menu_one" id="sticky">
             <div class="container">
 
-                <a class="navbar-brand sticky_logo" href="index.html">
+                <a href="index.html" class="navbar-brand sticky_logo">
                     <img src="img/logo_plain.png" alt="logo" width="250px">
                     <img src="img/logo.png" alt="logo" width="250px">
                 </a>
@@ -64,7 +62,7 @@
                     </span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav menu ml-auto">
                         <li class="nav-item dropdown submenu active">
                             <a href="index.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
@@ -96,52 +94,46 @@
             <img class="p_absolute star_two" src="img/home_banner/star.png" alt="">
             <img class="p_absolute star_three" src="img/home_banner/star.png" alt="">
             <img class="p_absolute one wow fadeInLeft" data-wow-delay="0.1s" src="img/home_banner/b_man.png" alt="">
-            <img class="p_absolute two wow fadeInRight" data-wow-delay="0.2s" src="img/home_banner/b_man_two.png"
-                alt="">
+            <img class="p_absolute two wow fadeInRight" data-wow-delay="0.2s" src="img/home_banner/b_man_two.png" alt="">
             <img class="p_absolute three wow fadeInUp" data-wow-delay="0.3s" src="img/home_banner/flower.png" alt="">
-            <img class="p_absolute four wow fadeInRight" data-wow-delay="0.4s" src="img/home_banner/girl_img.png"
-                alt="">
+            <img class="p_absolute four wow fadeInRight" data-wow-delay="0.4s" src="img/home_banner/girl_img.png" alt="">
             <img class="p_absolute five wow fadeIn" data-wow-delay="0.5s" src="img/home_banner/file.png" alt="">
             <img class="p_absolute bl_left" src="img/home_banner/v.svg" alt="">
             <img class="p_absolute bl_right" src="img/home_banner/b_leaf.svg" alt="">
             <div class="container">
                 <div class="doc_banner_text">
-                    <h2 class="wow fadeInUp" data-wow-delay="0.3s">Hello, what can we help you find?</h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.5s">we're here for you. Find articles, help and advice for
-                        getting the most our of docall theme</p>
+                    <h2 class="main_banner_title wow fadeInUp" data-wow-delay="0.3s"></h2>
+                    <p class="main_banner_subtitle wow fadeInUp" data-wow-delay="0.5s"></p>
                 </div>
             </div>
         </section>
 
+        <!-- Prodect -->
         <style>
             @import url(https://use.fontawesome.com/releases/v5.4.1/css/all.css);
 
             :root {
-                --white: #ffffff;
-                --white-rgb: 255, 255, 255;
-                --dark: #0f0617;
-                --dark-rgb: 15, 6, 23;
-                --light: #e8e0e0;
-                --light-rgb: 232, 224, 224;
                 --primary: #b245ff;
-                --primary-rgb: 178, 69, 255;
-                --secondary: #fac384;
-                --secondary-rgb: 250, 195, 132;
+                --light: #e8e0e0;
+                --white: #ffffff;
                 --shadow-color: 178, 169, 169;
                 --shadow: 1.4px 2.7px 3.6px rgba(var(--shadow-color), 0.017),
                     3.8px 7.5px 10px rgba(var(--shadow-color), 0.025),
                     9px 18.1px 24.1px rgba(var(--shadow-color), 0.033),
                     30px 60px 80px rgba(var(--shadow-color), 0.05);
+                --dark: #0f0617;
+                --dark-rgb: 15, 6, 23;
+                --secondary: #fac384;
                 --shadow-hover: 1.8px 3.7px 3.6px rgba(var(--shadow-color), 0.052),
                     5px 10.1px 10px rgba(var(--shadow-color), 0.075),
                     12.1px 24.4px 24.1px rgba(var(--shadow-color), 0.098),
                     40px 81px 80px rgba(var(--shadow-color), 0.15);
+                --primary-rgb: 178, 69, 255;
             }
 
             h1 {
                 font-size: 32px;
                 line-height: 1.25;
-                margin: 0;
             }
 
             @media (min-width: 768px) {
@@ -155,32 +147,6 @@
                 flex-wrap: wrap;
                 gap: 12px;
                 padding: 80px 0 48px;
-            }
-
-            .search {
-                position: relative;
-            }
-
-            .search__input {
-                padding: 12px 40px 12px 16px;
-                border: 1px solid var(--primary);
-                background: var(--white);
-                color: var(--dark);
-                font-size: 16px;
-                border-radius: 32px;
-                outline: 0;
-            }
-
-            .search__button {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 16px;
-                color: var(--primary);
-                margin: 0;
-                padding: 0;
-                background: transparent;
-                border: 0;
             }
 
             .button {
@@ -199,25 +165,6 @@
                 color: var(--light);
             }
 
-            .grid {
-                display: grid;
-                grid-template-columns: 100%;
-                gap: 32px;
-            }
-
-            @media (min-width: 768px) {
-                .grid {
-                    grid-template-columns: 50% 50%;
-                }
-            }
-
-            @media (min-width: 1400px) {
-                .grid {
-                    grid-template-columns: 33.33% 33.33% 33.33%;
-                    gap: 48px;
-                }
-            }
-
             .card {
                 display: flex;
                 flex-direction: column;
@@ -231,14 +178,12 @@
                 position: relative;
                 width: 100%;
                 height: 400px;
-                /* Replace aspect-ratio with fixed height */
             }
 
             .card_picture {
                 display: block;
                 width: 100%;
                 height: 50%;
-                /* Replace aspect-ratio with fixed height */
                 overflow: hidden;
                 position: relative;
                 transition: background 0.25s;
@@ -248,8 +193,7 @@
                 content: "";
                 position: absolute;
                 inset: 0;
-                background: linear-gradient(rgba(var(--dark-rgb), 0) 25%,
-                        rgba(var(--dark-rgb), 0));
+                background: linear-gradient(rgba(var(--dark-rgb), 0) 25%, rgba(var(--dark-rgb), 0));
                 z-index: 1;
             }
 
@@ -264,7 +208,6 @@
                 padding: 48px 32px 1px 32px;
                 position: relative;
                 height: 50%;
-                /* Replace aspect-ratio with fixed height */
             }
 
             .card_title {
@@ -275,6 +218,16 @@
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
+            }
+
+            .card_location {
+                color: var(--primary);
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 4px;
             }
 
             .card_more {
@@ -314,82 +267,7 @@
                 }
             }
 
-            .card_location {
-                color: var(--primary);
-                text-transform: uppercase;
-                font-size: 14px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                gap: 4px;
-            }
-
-            .card:nth-child(5n) {
-                justify-content: flex-end;
-                height: 600px;
-                /* Replace aspect-ratio with fixed height */
-            }
-
-            @media (min-width: 768px) {
-                .card:nth-child(5n) {
-                    grid-column: span 2;
-                    height: 400px;
-                    /* Adjust height */
-                }
-            }
-
-            @media (min-width: 1400px) {
-                .card:nth-child(5n) {
-                    height: 500px;
-                    /* Adjust height */
-                }
-            }
-
-            .card:nth-child(5n) .card_picture {
-                position: absolute;
-                inset: 0;
-                height: 60%;
-                /* Adjust height */
-            }
-
-            .card:nth-child(5n) .card_picture:before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                z-index: 1;
-                background: linear-gradient(rgba(var(--dark-rgb), 0) 25%,
-                        rgba(var(--dark-rgb), 0.5));
-            }
-
-            .card:nth-child(5n) .card_picture:after {
-                background: linear-gradient(rgba(var(--dark-rgb), 0) 25%,
-                        rgba(var(--dark-rgb), 0.5));
-            }
-
-            .card:nth-child(5n) .card_more {
-                display: none;
-            }
-
-            .card:nth-child(5n) .card_content {
-                position: relative;
-                z-index: 1;
-                color: var(--light);
-                background: none;
-                height: 40%;
-                /* Adjust height */
-            }
-
-            @media (min-width: 1400px) {
-                .card:nth-child(5n) .card_content {
-                    max-width: 66.6667%;
-                }
-            }
-
-            .card:nth-child(5n) .card_location {
-                color: var(--light);
-            }
-
-            .card.--inactive {
+            .serach_card.--inactive {
                 display: none;
             }
 
@@ -410,19 +288,13 @@
                 background: var(--primary);
             }
         </style>
-
-        <!-- Prodect -->
         <section class="doc_features_area_one" style="background-color: var(--light);">
             <div class="container">
-                <div class="section_title text-center">
+                <div class="text-center">
                     <h1 class="wow fadeInUp" data-wow-delay="0.3s">Our Exclusive Project Documentations</h1>
                 </div>
 
                 <div class="filter wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="search">
-                        <input type="text" class="search__input" placeholder="Serach Product...">
-                        <button class="search__button"><i class="fa fa-search"></i></button>
-                    </div>
                     <button class="button --active">All</button>
                     <button class="button">Flutter App</button>
                     <button class="button">Flutter Web</button>
@@ -431,23 +303,24 @@
                     <button class="button">UI / UX</button>
                 </div>
 
-                <div class="row wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="col-lg-3 col-sm-6">
+                <div class="row product_grid">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
                                     src="https://images.unsplash.com/photo-1548585742-1df49e753a83?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Menschen, die tagsüber neben dem weißen und braunen Kuppelgebäude spazieren gehen"
-                                    title="Foto von Claudio Hirschberger auf Unsplash">
+                                    alt="Project Name">
                             </picture>
+
                             <span class="card_more"></span>
+
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -458,11 +331,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Android App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -473,11 +346,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">UI / UX</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -488,13 +361,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Android TV</p>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row mt-5 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInRight" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -505,11 +376,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInRight" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -520,11 +391,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInRight" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -535,11 +406,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Android App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInRight" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -550,13 +421,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter Web</p>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row mt-5 wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -567,11 +436,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter Web</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -582,11 +451,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter App</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -597,11 +466,11 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter Web</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 mb-5 serach_card wow fadeInLeft" data-wow-delay="0.2s">
                         <a class="card" href="#" target="_blank" rel="nofollow noopener">
                             <picture class="card_picture">
                                 <img class="card_image"
@@ -612,201 +481,81 @@
                             <span class="card_more"></span>
                             <div class="card_content">
                                 <h3 class="card_title">Project Name</h3>
-                                <p class="card_location">Category Name</p>
+                                <p class="card_location">Flutter App</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-
         <script>
             const buttons = document.querySelectorAll(".button");
-            const grid = document.querySelector(".grid");
-            const gridItems = Array.from(grid.querySelectorAll(".card"));
+            const productGrid = document.querySelector(".product_grid");
+            const gridItems = Array.from(productGrid.querySelectorAll(".serach_card"));
 
             buttons.forEach((button) => {
                 button.addEventListener("click", function () {
+
                     buttons.forEach((item) => {
                         item.classList.remove("--active");
-                        item.setAttribute("aria-pressed", true);
+                        item.setAttribute("aria-pressed", false);
                     });
-
                     button.classList.add("--active");
                     button.setAttribute("aria-pressed", true);
 
                     const location = button.textContent.toLowerCase();
                     const filteredItems = gridItems.filter(
-                        (item) =>
-                            item.querySelector(".card_location").textContent.toLowerCase() === location
+                        (item) => item.querySelector(".card_location").textContent.toLowerCase() === location
                     );
 
                     if (location === "all") {
                         gridItems.forEach((item) => item.classList.remove("--inactive"));
-                        return;
+                    } else {
+                        gridItems.forEach((item) => item.classList.add("--inactive"));
+                        filteredItems.forEach((item) => item.classList.remove("--inactive"));
                     }
-
-                    gridItems.forEach((item) => item.classList.add("--inactive"));
-                    filteredItems.forEach((item) => item.classList.remove("--inactive"));
                 });
             });
         </script>
 
+        <!-- Envato Licenes -->
         <style>
-            h6,
-            .h6,
-            h5,
-            .h5,
-            h4,
-            .h4,
-            h3,
-            .h3,
-            h2,
-            .h2,
-            h1,
-            .h1 {
-                margin-top: 0;
-                margin-bottom: 1rem;
-                font-weight: 500;
-                line-height: 1.375;
-                color: #433c50;
-            }    
-            @media (min-width: 1400px) {
-                .container {
-                    max-width: 1440px;
-                }
-            }
-            @media (min-width: 992px) {
-
-                .container,
-                .container-fluid,
-                .container-sm,
-                .container-md,
-                .container-lg,
-                .container-xl,
-                .container-xxl {
-                    padding-right: 1.5rem;
-                    padding-left: 1.5rem;
-                }
-            }
-            .container {
-                padding-right: 1rem;
-                padding-left: 1rem;
-            }
-            .fw-medium {
-                font-weight: 500 !important;
-            }
-            @media (min-width: 992px) {
-                .col-lg {
-                    flex: 1 0 0%;
-                }
-            }
-            @media (min-width: 992px) {
-                .mb-lg-4 {
-                    margin-bottom: 1rem !important;
-                }
-            }
-            @media (min-width: 992px) {
-                .p-lg-6 {
-                    padding: 1.5rem !important;
-                }
-            }
-            .card {
-                background-clip: padding-box;
-                box-shadow: 0 .25rem .625rem rgba(46, 38, 61, .2);
-                border-radius: 0.375rem;
-            }
-            .landing-pricing .card .card-header,
-            .landing-pricing .card .card-body {
-                padding: 2rem
-            }
-            .text-uppercase {
-                text-transform: uppercase !important;
-            }
-            @media (min-width: 768px) {
-                .mb-md-12 {
-                    margin-bottom: 3rem !important;
-                }
-            }
-            p {
-                margin-top: 0;
-                margin-bottom: 1rem;
-            }
-            .card {
-                background-clip: padding-box;
-                box-shadow: 0 .25rem .625rem rgba(46, 38, 61, .2);
-            }
-            .card {
-                --bs-card-spacer-y: 1.25rem;
-                --bs-card-spacer-x: 1.25rem;
-                --bs-card-title-spacer-y: 0.5rem;
-                --bs-card-title-color: #433c50;
-                --bs-card-subtitle-color: #8c8894;
-                --bs-card-border-width: 0;
-                --bs-card-border-color: #e6e5e8;
-                --bs-card-border-radius: 0.375rem;
-                --bs-card-box-shadow: 0 0.25rem 0.625rem rgba(46, 38, 61, 0.2);
-                --bs-card-inner-border-radius: 0.375rem;
-                --bs-card-cap-padding-y: 1.25rem;
-                --bs-card-cap-padding-x: 1.25rem;
-                --bs-card-cap-bg: transparent;
-                --bs-card-cap-color: #433c50;
-                --bs-card-height: ;
-                --bs-card-color: ;
-                --bs-card-bg: #fff;
-                --bs-card-img-overlay-padding: 1.5rem;
-                --bs-card-group-margin: 1.5rem;
-                position: relative;
+            .landing-pricing .card {
+                background-color: #fff;
+                border: 2px solid #000;
+                border-radius: 5px;
                 display: flex;
                 flex-direction: column;
-                min-width: 0;
-                height: var(--bs-card-height);
-                color: var(--bs-body-color);
-                word-wrap: break-word;
-                background-color: var(--bs-card-bg);
-                background-clip: border-box;
-                border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-                border-radius: var(--bs-card-border-radius);
+                height: 100%;
             }
-            .shadow-none {
-                box-shadow: none !important;
+
+            .landing-pricing .card-body {
+                padding: 0px 20px;
+                flex-grow: 1;
             }
-            .card-body {
-                flex: 1 1 auto;
-                padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-                color: var(--bs-card-color);
+
+            .landing-pricing .card-header {
+                background-color: transparent;
+                border-bottom: 0 solid #e6e5e8;
             }
-            .card-title {
-                margin-bottom: var(--bs-card-title-spacer-y);
-                color: var(--bs-card-title-color);
-            }
-            .card-header {
-                padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-                margin-bottom: 0;
-                color: #433c50;
-                background-color: var(--bs-card-cap-bg);
-                border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
-            }
-            @media (min-width: 992px) {
-                .pt-lg-4 {
-                    padding-top: 1.5rem !important;
-                }
+
+            .bg-body {
+                background-color: #716780 !important
             }
         </style>
+        <section class="landing-pricing bg-body pt-5 pb-5">
+            <div class="container">
 
-        <!-- Pricing plans: Start -->
-        <section class="section-py landing-pricing bg_color bg-info p-5">
-            <div class="container position-relative">
+                <h2 class="text-center wow fadeInDown" data-wow-delay="0.4s">Envato License</h2>
+                <h5 class="text-center wow fadeInDown" data-wow-delay="0.2s">All plans include 40+ advanced tools and
+                    features to boost your product.<br> the best plan to fit your needs.</h5>
 
-                <h5 class="text-center"><span class="h4">Envato Licenes</h5>
-                <p class="text-center fw-medium">All plans include 40+ advanced tools and features to boost your product.<br> the best plan to fit your needs.</p>
-
-                <div class="row gy-4 pt-lg-4">
-                    <!-- Basic Plan: Start  -->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="card shadow-none">
-                            <div class="card-header border-0">
-                                <h4 class="mb-3 text-center">Basic Plan</h4><hr>
+                <div class="row gy-4">
+                    <div class="col-xl-6 col-lg-6 mt-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-3 text-center">Regular License</h4>
+                                <hr>
                             </div>
                             <div class="card-body">
                                 <ul class="list-unstyled">
@@ -846,16 +595,38 @@
                                             Traffic analytics
                                         </h5>
                                     </li>
+                                    <li>
+                                        <h5 class="mb-3">
+                                            <i class="fas fa-arrow-right scaleX-n1-rtl"></i>
+                                            Custom Forms
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h5 class="mb-3">
+                                            <i class="fas fa-arrow-right scaleX-n1-rtl"></i>
+                                            Traffic analytics
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h5 class="mb-3">
+                                            <i class="fas fa-arrow-right scaleX-n1-rtl"></i>
+                                            Custom Forms
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h5 class="mb-3">
+                                            <i class="fas fa-arrow-right scaleX-n1-rtl"></i>
+                                            Traffic analytics
+                                        </h5>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Basic Plan: End  -->
-                    <!-- Favourite Plan: Start  -->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="card border-primary border-2 shadow-none">
-                            <div class="card-header border-0">
-                                <h4 class="mb-3 text-center">Favourite Plan</h4>
+                    <div class="col-xl-6 col-lg-6 mt-md-3 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-3 text-center">Extended License</h4>
                                 <hr>
                             </div>
 
@@ -901,7 +672,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Favourite Plan: End -->
                 </div>
             </div>
         </section>
@@ -909,16 +679,16 @@
         <!-- Footer -->
         <footer class="footer_area bg_color">
             <img class="p_absolute leaf" src="img/footer/v.svg" alt="">
-            <img class="p_absolute f_man" src="img/footer/f_man.png" alt="">
+            <img class="p_absolute f_man wow fadeInRight" data-wow-delay="0.2s" src="img/footer/f_man.png" alt="">
             <img class="p_absolute f_cloud" src="img/footer/cloud.png" alt="">
             <img class="p_absolute f_email" src="img/footer/email-icon.png" alt="">
             <img class="p_absolute f_email_two" src="img/footer/email-icon_two.png" alt="">
-            <img class="p_absolute f_man_two" src="img/footer/man.png" alt="">
+            <img class="p_absolute f_man_two wow fadeInLeft" data-wow-delay="0.1s" src="img/footer/man.png" alt="">
 
             <div class="footer_top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.2s">
                             <div class="f_widget subscribe_widget">
                                 <a href="index.html" class="f_logo"><img src="img/logo.png" alt=""></a>
                                 <h4 class="c_head">Subscribe to Social Media</h4>
@@ -931,31 +701,25 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-0"></div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-2 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">
                             <div class="f_widget link_widget">
                                 <h3 class="f_title">Support</h3>
                                 <ul class="list-unstyled link_list">
-                                    <li><a href="index-3.html">Help Desk</a></li>
-                                    <li><a href="#">Knowledge Base</a></li>
-                                    <li><a href="#">Live Chat</a></li>
-                                    <li><a href="#">Integrations</a></li>
-                                    <li><a href="#">Reports</a></li>
-                                    <li><a href="#">iOS & Android</a></li>
-                                    <li><a href="#">Messages</a></li>
+                                    <li><a href="#">Ticket / Helpdesk</a></li>
+                                    <li><a href="#">Our Portfolio</a></li>
+                                    <li><a href="#">Article</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6 wow fadeInRight" data-wow-delay="0.2s">
                             <div class="f_widget link_widget pl_70">
-                                <h3 class="f_title">Doc Pages</h3>
+                                <h3 class="f_title">Products</h3>
                                 <ul class="list-unstyled link_list">
-                                    <li><a href="doclist.html">Doc Topic</a></li>
-                                    <li><a href="#">Free Training</a></li>
-                                    <li><a href="doc-archive.html">Doc Archive</a></li>
-                                    <li><a href="changelog.html">Changelog</a></li>
-                                    <li><a href="Onepage.html">Onepage Docs</a></li>
-                                    <li><a href="#">Conversion Tracking</a></li>
-                                    <li><a href="cheatsheet.html">Cheatseet</a></li>
+                                    <li><a href="#">Flutter App</a></li>
+                                    <li><a href="#">Flutter Web</a></li>
+                                    <li><a href="#">Android App</a></li>
+                                    <li><a href="#">Android TV</a></li>
+                                    <li><a href="#">UI / UX</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -966,7 +730,8 @@
 
             <div class="footer_bottom text-center">
                 <div class="container">
-                    <p>© 2024 All Rights Reserved by <a href="index.html">Divinetechs</a></p>
+                    <p class="wow fadeInUp" data-wow-delay="0.2s">© 2024 All Rights Reserved by <a
+                            href="index.html">Divinetechs</a></p>
                 </div>
             </div>
         </footer>
