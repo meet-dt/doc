@@ -5881,6 +5881,18 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
   color: #fa303e;
 }
 
+.notice-info {
+  background: #17a2b8;
+  border-color: #057182;
+}
+.notice-info i {
+  color: #057182;
+  padding-top: 4px;
+}
+.notice-info p, .notice-info i, .notice-info h5 {
+  color: #fff;
+}
+
 .explanation {
   position: relative;
   background: linear-gradient(90deg, #fff, #75e3fb);
