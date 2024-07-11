@@ -568,22 +568,6 @@ button:focus {
   bottom: -7px;
   z-index: 1;
 }
-.dark {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: auto;
-  bottom: 0;
-  z-index: -1;
-}
-.dark_two {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: auto;
-  bottom: 0;
-  z-index: -1;
-}
 .doc_banner_text {
   text-align: center;
 }
@@ -997,16 +981,16 @@ button:focus {
 .serach_card.--inactive {
   display: none;
 }
-.card:hover { 
+.serach_card .card:hover { 
   box-shadow: var(--prod-shadow-hover);
 }
-.card:hover .card_picture:after {
+.serach_card .card:hover .card_picture:after {
   background: linear-gradient(rgba(235, 139, 30, 0) 25%, rgba(235, 139, 30, 0.5))  
 }
-.card:hover .card_image {
+.serach_card .card:hover .card_image {
   transform: scale(1.1);
 }
-.card:hover .card_more {
+.serach_card .card:hover .card_more {
   background: var(--secondary-color);
 }
 /** === Envato Licenes === **/
