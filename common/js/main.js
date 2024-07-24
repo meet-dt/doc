@@ -1,4 +1,4 @@
-;(function ($) {
+; (function ($) {
 	"use strict";
 
 	//*=============menu sticky js =============*//
@@ -87,9 +87,7 @@
 			}
 		}
 	}
-
 	bodyFixed();
-
 
 	/*  Menu Click js  */
 	function Menu_js() {
@@ -101,9 +99,7 @@
 			});
 		}
 	}
-
 	Menu_js();
-
 
 	$('.doc_menu a[href^="#"]:not([href="#"]').on('click', function (event) {
 		var $anchor = $(this);
@@ -193,7 +189,6 @@
 			});
 		}
 	}
-
 	parallax();
 
 	/*--------------- tooltip js--------*/
@@ -247,7 +242,6 @@
 			$(this).parent().siblings().find('ul').hide(300);
 		});
 	}
-
 	active_dropdown();
 
 	$('.nav-sidebar > li .icon').each(function () {
@@ -270,7 +264,6 @@
 			$(this).parent().siblings().find('ul').hide(300);
 		});
 	}
-
 	active_dropdown2();
 
 	/*--------------- search js--------*/
@@ -292,7 +285,6 @@
 			$('#mySelect').selectpicker();
 		}
 	}
-
 	select();
 
 	/*--------------- counterUp js--------*/
@@ -304,7 +296,6 @@
 			});
 		};
 	};
-
 	counterUp();
 
 	/*--------------- popup-js--------*/
@@ -327,7 +318,6 @@
 			})
 		}
 	}
-
 	popupGallery();
 
 	/*--------------- video js--------*/
@@ -342,7 +332,6 @@
 			});
 		}
 	}
-
 	video();
 
 	/*=========== Font size switcher/controller ===========*/
@@ -358,7 +347,6 @@
 	}
 
 	/*=========== anchors js ===========*/
-
 	if ($(".load-order-2").length) {
 		var Anchor1 = new AnchorJS();
 		document.addEventListener("DOMContentLoaded", function (event) {
@@ -367,7 +355,6 @@
 		});
 	}
 
-
 	/*--------- WOW js-----------*/
 	function bodyScrollAnimation() {
 		var scrollAnimate = $('body').data('scroll-animation');
@@ -375,9 +362,7 @@
 			new WOW({}).init()
 		}
 	}
-
 	bodyScrollAnimation();
-
 
 	/*------------ Video js ------------*/
 	if ($(".video-js").length) {
@@ -486,7 +471,6 @@
 		$('.side_menu').removeClass('menu-opened');
 	});
 
-
 	/*--------------- Tab button js--------*/
 	$('.next').on('click', function () {
 		$('.v_menu .nav-item > .active').parent().next('li').find('a').trigger('click');
@@ -551,7 +535,6 @@
 			};
 		}
 	}
-
 	Click_menu_hover();
 
 	function Tab_menu_activator() {
@@ -561,7 +544,6 @@
 			});
 		}
 	}
-
 	Tab_menu_activator();
 
 	function fAqactive() {
@@ -570,9 +552,7 @@
 			$(this).addClass('active');
 		});
 	}
-
 	fAqactive();
-
 
 	function chartJs() {
 
@@ -590,22 +570,22 @@
 
 		var data = [{
 
-				'name': '35 out of 205 issues unanswered',
-				'value': 36
-			},
-			{
+			'name': '35 out of 205 issues unanswered',
+			'value': 36
+		},
+		{
 
-				'name': 'We are working on 42 out of 205 issues',
-				'value': 40
-			},
-			{
-				'name': '20 Out of 205 issues haven\'t got a reply',
-				'value': 44
-			},
-			{
-				'name': '90 Out of 205 issues resolved in last tow monthsSent',
-				'value': 50
-			}
+			'name': 'We are working on 42 out of 205 issues',
+			'value': 40
+		},
+		{
+			'name': '20 Out of 205 issues haven\'t got a reply',
+			'value': 44
+		},
+		{
+			'name': '90 Out of 205 issues resolved in last tow monthsSent',
+			'value': 50
+		}
 		];
 
 		var labels = [];
@@ -687,12 +667,11 @@
 
 		});
 
-		
-		$('.short-by a').click( function() {
+
+		$('.short-by a').click(function () {
 			$(this).toggleClass('active-short').siblings().removeClass('active-short');
 		});
 	}
-
 	general()
 	/*-------------------------------------
 	Intersection Observer
@@ -718,36 +697,35 @@
 		});
 	}
 
-    // === Image Magnify
-    if ($('.zoom').length) {
-        $('.zoom').magnify({
-            afterLoad: function () {
-                console.log('Magnification powers activated!');
-            }
-        });
-    }
+	// === Image Magnify
+	if ($('.zoom').length) {
+		$('.zoom').magnify({
+			afterLoad: function () {
+				console.log('Magnification powers activated!');
+			}
+		});
+	}
 
-    // === Focus Search Form
-    $( document ).on( 'keydown', function ( e ) {
-        if ( e.keyCode === 191 ) {
-            e.preventDefault();
-            $('input[type=search]').focus();
-            return;
-        }
-    });
+	// === Focus Search Form
+	$(document).on('keydown', function (e) {
+		if (e.keyCode === 191) {
+			e.preventDefault();
+			$('input[type=search]').focus();
+			return;
+		}
+	});
 
-	$('input[type=search]').focus(function() {
+	$('input[type=search]').focus(function () {
 		$('body').addClass('search-focused');
 		$('.banner_search_form .input-group').css('z-index', '9999')
 	})
 
-	$('input[type=search]').focusout(function() {
+	$('input[type=search]').focusout(function () {
 		$('body').removeClass('search-focused');
 	})
 
-
 	// === Video Autoplay on viewport
-	$(document).ready(function() {
+	$(document).ready(function () {
 		$(window).scroll(function () {
 			$('video').each(function () {
 				if ($(this).is(":in-viewport")) {
@@ -760,7 +738,7 @@
 	})
 
 	// === YouTube Channel Videos Playlist
-	if ( $('#ycp').length ) {
+	if ($('#ycp').length) {
 		$("#ycp").ycp({
 			apikey: 'AIzaSyBS5J1A7o-M8X78JuiqF5h103XLmSQiReE',
 			playlist: 6,
@@ -769,10 +747,10 @@
 		});
 	}
 
-    // === Back to Top Button
+	// === Back to Top Button
 	var back_top_btn = $('#back-to-top');
 
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		if ($(window).scrollTop() > 300) {
 			back_top_btn.addClass('show');
 		} else {
@@ -780,38 +758,78 @@
 		}
 	});
 
-	back_top_btn.on('click', function(e) {
+	back_top_btn.on('click', function (e) {
 		e.preventDefault();
-		$('html, body').animate({scrollTop:0}, '300');
+		$('html, body').animate({ scrollTop: 0 }, '300');
 	});
-
 
 	/**
 	 * OS select dropdown
 	 */
-	if( $('#mySelect').val() == "windows" ) {
+	if ($('#mySelect').val() == "windows") {
 		$('.windows').show();
 	} else {
 		$('.windows').hide();
 	}
 
-	if( $('#mySelect').val() == "ios" ) {
+	if ($('#mySelect').val() == "ios") {
 		$('.ios').show();
 	} else {
 		$('.ios').hide();
 	}
 
-	$('#mySelect').change(function() {
-		if( $('#mySelect').val() == "windows" ) {
+	$('#mySelect').change(function () {
+		if ($('#mySelect').val() == "windows") {
 			$('.windows').show();
 		} else {
 			$('.windows').hide();
 		}
-		if( $('#mySelect').val() == "ios" ) {
+		if ($('#mySelect').val() == "ios") {
 			$('.ios').show();
 		} else {
 			$('.ios').hide();
 		}
 	})
+
+	// === Our time & Your time
+	function updateTimeStatus() {
+		const supportStatus = document.getElementById('support-status');
+		const ourTimeElem = document.getElementById('our-time');
+		const yourTimeElem = document.getElementById('your-time');
+
+		const currentDateTime = new Date();
+		const ourDateTime = new Date(currentDateTime.toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+		const yourDateTime = currentDateTime;
+
+		// Define options for formatting time
+		const timeOptions = {
+			hour: '2-digit',
+			minute: '2-digit',
+			hour12: true
+		};
+
+		// Update displayed times with AM/PM
+		ourTimeElem.textContent = ourDateTime.toLocaleTimeString('en-US', timeOptions);
+		yourTimeElem.textContent = yourDateTime.toLocaleTimeString('en-US', timeOptions);
+
+		// Check if current Kolkata time is within office hours (10am - 6pm)
+		const officeOpenHour = 10;
+		const officeCloseHour = 18;
+		const dayOfWeek = ourDateTime.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+		const kolkataHours = ourDateTime.getHours();
+
+		if (dayOfWeek >= 1 && dayOfWeek <= 5 && kolkataHours >= officeOpenHour && kolkataHours < officeCloseHour) {
+			supportStatus.textContent = 'Online';
+			supportStatus.classList.remove('offline');
+			supportStatus.classList.add('online');
+		} else {
+			supportStatus.textContent = 'Offline';
+			supportStatus.classList.remove('online');
+			supportStatus.classList.add('offline');
+		}
+	}
+	updateTimeStatus();
+	// Update status every second
+	setInterval(updateTimeStatus, 1000);
 
 })(jQuery);

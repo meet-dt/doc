@@ -2,17 +2,17 @@
     "use strict";
 
     /*============= preloader js css =============*/
-    var cites = [];
-    cites[0] = "The faster your website loads, the faster your business grows.";
-    cites[1] = "Your website's speed is your first impression, and first impressions matter.";
-    cites[2] = "A fast website is the key to keeping customers engaged and reducing bounce rates.";
-    cites[3] = "Milliseconds matter when it comes to loading times. Every second counts in the digital world.";
-    cites[4] = "Fast loading times can be the difference between a customer gained and a customer lost.";
-    cites[5] = "Speed is a feature. The faster you can make your website, the more people are going to use it.";
+    // var cites = [];
+    // cites[0] = "The faster your website loads, the faster your business grows.";
+    // cites[1] = "Your website's speed is your first impression, and first impressions matter.";
+    // cites[2] = "A fast website is the key to keeping customers engaged and reducing bounce rates.";
+    // cites[3] = "Milliseconds matter when it comes to loading times. Every second counts in the digital world.";
+    // cites[4] = "Fast loading times can be the difference between a customer gained and a customer lost.";
+    // cites[5] = "Speed is a feature. The faster you can make your website, the more people are going to use it.";
 
-    var cite = cites[Math.floor(Math.random() * cites.length)];
-    $('#preloader p').text(cite);
-    $('#preloader').addClass('loading');
+    // var cite = cites[Math.floor(Math.random() * cites.length)];
+    // $('#preloader p').text(cite);
+    // $('#preloader').addClass('loading');
 
     $(window).on('load', function () {
         setTimeout(function () {

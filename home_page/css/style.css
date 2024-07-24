@@ -859,12 +859,12 @@ button:focus {
 .doc_features_area_one:before {
   height: 460px;
   top: 0;
-  background: url("../img/home_banner/dow_bg.png") no-repeat scroll center top/cover;
+  background: url("../img/common/dow_bg.png") no-repeat scroll center top/cover;
 }
 .doc_features_area_one:after {
   height: 460px;
   bottom: 0;
-  background: url("../img/home_banner/dow_bg.png") no-repeat scroll center bottom/cover;
+  background: url("../img/common/dow_bg.png") no-repeat scroll center bottom/cover;
   transform: scaleY(-1) scaleX(-1);
 }
 .filter {
@@ -1004,25 +1004,31 @@ button:focus {
   position: relative;
   overflow: hidden;
 }
-.landing-pricing .container h2, .landing-pricing .container h5{
+.landing-pricing .container h1, .landing-pricing .container h5{
   color: var(--white-color);
 }
 .landing-pricing .card {
   height: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--wave-color);
   border: 0px;
+  color: var(--primary-color);
 }
 .landing-pricing .card-body {
   padding: 0px 20px;
   flex-grow: 1;
   margin-top: 20px;
 }
-.landing-pricing .card-body h5{
-  color: var(--white-color);
+.landing-pricing .card-body h6{
+  color: var(--primary-color);
 }
 .landing-pricing .card-header {
   position: relative;
   z-index: 1;
+  background-color: var(--wave-color);
+  border: 0px;
+}
+.landing-pricing .card-header h4{
+  color: var(--white-color);
 }
 .landing-pricing .card-header::after {
   content: "";
@@ -1032,7 +1038,7 @@ button:focus {
   height: 85px;
   top: 0;
   left: 0;
-  background: url("../img/home_banner/dow_bg_small.png") no-repeat scroll center top/cover;
+  background: url("../img/common/dow_bg_small.png") no-repeat scroll center top/cover;
   transform: scaleX(-1);
 }
 .landing-pricing .container .star_one {

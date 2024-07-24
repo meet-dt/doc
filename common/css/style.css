@@ -1401,7 +1401,6 @@ ul.list-style li:last-child {
   left: 20px;
   z-index: 1;
 }
-
 .bl_right {
   width: 135px;
   height: 110px;
@@ -1545,13 +1544,11 @@ ul.list-style li:last-child {
   bottom: -14px;
   right: 320px;
 }
-
 .b_plus,
 .b_round,
 .p_absolute {
   position: absolute;
 }
-
 .b_plus.one {
   left: 120px;
   top: 120px;
@@ -1560,7 +1557,6 @@ ul.list-style li:last-child {
   right: 25%;
   top: 210px;
 }
-
 .b_round {
   border-radius: 50%;
 }
@@ -2008,7 +2004,7 @@ ul.list-style li:last-child {
 }
 .breadcrumb_area .one {
   right: 20%;
-  bottom: 25px;
+  bottom: 0px;
 }
 .breadcrumb_area .two {
   left: 20%;
@@ -2039,13 +2035,11 @@ ul.list-style li:last-child {
   background: #e2e7e9;
   z-index: 1;
 }
-
 .wave_shap_one,
 .wave_shap_two {
   bottom: 0;
   z-index: 0;
 }
-
 .custom-select {
   border-radius: 0;
   font-size: 14px;
@@ -2243,6 +2237,11 @@ ul.list-style li:last-child {
 }
 .breadcrumb_content_two h2 {
   font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+.breadcrumb_content_two h5 {
+  font-size: 25px;
   color: #fff;
   font-weight: 700;
 }
@@ -4468,7 +4467,7 @@ ul.list-style li:last-child {
   padding-top: 0;
 }
 .onepage-doc .doc-container {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .doc_rightsidebar .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
@@ -7561,16 +7560,29 @@ ul.forum-titles .forum-freshness .freshness-box .freshness-btm .bbp-author-avata
   margin-bottom: 25px;
 }
 .status_widget .offline {
-  color: #f4b130;
-  border: 2px solid #f5d597;
+  color: #fff;
+  background-color: #e74c3c;
+  border: 2px solid #c0392b;
   padding: 0px 13px;
   display: inline-block;
   border-radius: 4px;
   margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.status_widget .online {
+  color: #fff;
+  background-color: #2ecc71;
+  border: 2px solid #27ae60;
+  padding: 0px 13px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .status_widget .title-sm {
   font-size: 16px;
-  color: #1d2746;
   font-weight: 500;
   margin-bottom: 10px;
 }
